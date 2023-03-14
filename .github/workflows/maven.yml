@@ -9,11 +9,11 @@ on:
       NON_MASTER_DEPLOY:
         description: 'Deploy even if this is not on the master branch'
         required: false
-        default: 'FALSE'
+        default: 'TRUE'
 
   push:
    branches: 
-    - 'master'
+    - '**'
   pull_request:
    branches:
     - 'master'
