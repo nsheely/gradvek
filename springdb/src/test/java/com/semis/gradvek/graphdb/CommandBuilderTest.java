@@ -7,7 +7,6 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 class CommandBuilderTest implements Constants {
     final String filterTarget = " AND toUpper(nt.symbol) = 'JAK3'";
     final String weightsPrefix = "MATCH (nd:Dataset {enabled: true}) WITH COLLECT(nd.dataset) AS enabledSets"
